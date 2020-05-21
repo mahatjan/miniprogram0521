@@ -1,0 +1,71 @@
+.search-box{
+  background-color: #fc304e;
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inpt{
+  background-color: white;
+  padding-left: 20rpx;
+  width: 90%;
+  height: 85%;
+  border-radius: 10rpx;
+}
+.pl{
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-box{
+  width: 100%;
+
+}
+swiper-item{
+  height: 340rpx;
+}
+.swiper-box swiper swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.m-nav{
+  display: flex;
+  height: 180rpx;
+  margin-top: 30rpx;
+  justify-content: space-around;
+  align-items: center;
+}
+.m-nav image{
+  height: 150rpx;
+  width: 150rpx;
+}
+.fashion{
+  padding: 20rpx;
+  height: 80rpx;
+  width: 100%;
+}
+.fashion text{
+  line-height: 80rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #fec0cb;
+}
+.p-list{
+  display: flex;
+  justify-content: space-around;
+}
+.p-list navigator{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 20rpx;
+  grid-column-gap: 10rpx;
+  justify-content: space-around;
+}
+.p-list navigator image{
+  width: 230rpx;
+  height: 168rpx;
+}

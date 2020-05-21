@@ -1,0 +1,70 @@
+<view class="search-box">
+  <input placeholder="搜索" class="inpt" placeholder-class="pl"></input>
+</view>
+
+<!-- <view class="swiper-box">
+  <swiper autoplay circular="true" interval="2000" indicator-dots > 
+    <swiper-item>
+    <image src="http://www.linweiqin.cn/img/banner1.jpg" mode="widthFit"></image>
+    </swiper-item>
+        <swiper-item>
+    <image src="http://www.linweiqin.cn/img/banner2.jpg"></image>
+    </swiper-item>
+        <swiper-item>
+    <image src="http://www.linweiqin.cn/img/banner3.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view> -->
+
+<view class="swiper-box">
+<swiper autoplay circular="true" interval="2000" indicator-dots>
+  <swiper-item wx:for="{{image_list}}" wx:key="image_src">
+    <image src="{{item.image_src}}"></image>
+  </swiper-item>
+</swiper>
+
+</view>
+
+
+<!-- <view class="m-nav">
+  <image src="http://www.linweiqin.cn/img/cat1.png"></image>
+  <image src="http://www.linweiqin.cn/img/cat2.png"></image>
+  <image src="http://www.linweiqin.cn/img/cat3.png"></image>
+  <image src="http://www.linweiqin.cn/img/cat4.png"></image>
+  <image src="http://www.linweiqin.cn/img/cat5.png"></image>
+</view> -->
+
+<view class="m-nav">
+  <block wx:for="{{nav_image}}" wx:key="nav_image_src">
+    <image src="{{item.nav_image_src}}"></image>
+  </block>
+
+</view>
+
+<view class="fashion"> 
+  <text>时尚服装</text>
+</view>
+
+<!-- <view class="p-list">
+<navigator open-type="navigate">
+<image src="http://www.linweiqin.cn/img/floor1.jpg"/>
+<image src="http://www.linweiqin.cn/img/floor2.jpg"/>
+<image src="http://www.linweiqin.cn/img/floor3.jpg"/> 
+<image src="http://www.linweiqin.cn/img/floor4.jpg"/>
+<image src="http://www.linweiqin.cn/img/floor5.jpg"/>
+<image src="http://www.linweiqin.cn/img/floor6.jpg"/> 
+</navigator>
+</view> -->
+
+<view class="p-list">
+<navigator open-type="navigate">
+<block wx:for="{{p_list}}" wx:key="image_src">
+  <image src="{{item.image_src}}"></image>
+</block>
+</navigator>
+</view>
+
+
+  
+  
+  

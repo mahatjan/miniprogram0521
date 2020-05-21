@@ -1,0 +1,86 @@
+page {
+  background-color: #f9f9f9;
+}
+.lgn {
+  height: 400rpx;
+  background-color: white;
+  position: relative;
+}
+.lgn .usr-bg image {
+  width: 100%;
+  height: 400rpx;
+  filter: blur(20rpx);
+}
+.lgn view.usr-avt {
+  position: absolute;
+  top: 150rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lgn view.usr-avt image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.lgn .nickname {
+  position: absolute;
+  top: 280rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lgn .nickname text {
+  color: white;
+}
+.lgn .login-btn {
+  position: absolute;
+  top: 160rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.second-nav {
+  padding: 0 40rpx;
+  height: 144rpx;
+  background-color: white;
+  display: flex;
+  margin-top: 20rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.second-nav .second-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-nav .second-nav-item .iconfont {
+  font-size: 50rpx;
+}
+.second-nav .second-nav-item .txt {
+  font-size: 26rpx;
+}
+.about-nav {
+  height: 520rpx;
+  background-color: white;
+}
+.about-nav .about-nav-item {
+  display: flex;
+  border-bottom: 1rpx solid #c8c8c8;
+  height: 100rpx;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+.about-nav .about-nav-item .left {
+  display: flex;
+  align-items: center;
+}
+.about-nav .about-nav-item .left .iconfont {
+  font-size: 40rpx;
+}
+.about-nav .about-nav-item .left .txt {
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+.about-nav .about-nav-item .right .txt {
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}

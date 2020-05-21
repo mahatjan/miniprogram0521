@@ -1,0 +1,65 @@
+
+<view class="lgn">
+<block wx:if="{{userInfo.nickName}}">
+<view class="usr-bg">
+<image src="{{userInfo.avatarUrl}}"></image>
+</view>
+<view class="usr-avt">
+<image src="{{userInfo.avatarUrl}}"></image>
+</view>
+<view class="nickname">
+<text>{{userInfo.nickName}}</text>
+</view>
+</block>
+<block wx:else>
+<button class="login-btn" type="warn" plain="true" open-type="getUserInfo" bindgetuserinfo="getUserInfoFun">登录</button>
+</block>
+</view>
+
+<view class="second-nav">
+  <view class="second-nav-item"> 
+    <view class="iconfont icon-icon-test"></view>
+    <view class="txt">代收款</view>
+  </view>
+    <view class="second-nav-item"> 
+    <view class="iconfont icon-daishouhuo"></view>
+    <view class="txt">待收货</view>
+  </view>
+    <view class="second-nav-item"> 
+    <view class="iconfont icon-tuikuan"></view>
+    <view class="txt">退货/退款</view>
+  </view>
+    <view class="second-nav-item"> 
+    <view class="iconfont icon-quanbudingdan"></view>
+    <view class="txt">全部订单</view>
+  </view>
+</view>
+
+
+  <view class="about-nav">
+    <view class="about-nav-item">
+      <view class="left">
+        <view class="iconfont icon-lianxikefu"></view>
+        <view class="txt">联系客服</view>
+      </view>
+      <view class="right">
+      <view class="txt">400-618-4000</view>
+      </view>
+    </view>
+    <view class="about-nav-item">
+      <view class="left">
+        <view class="iconfont icon-yijianfankui"></view>
+        <view class="txt">意见反馈</view>
+      </view>
+      <view class="right"></view>
+    </view>
+    <view class="about-nav-item">
+      <view class="left">
+        <view class="iconfont icon-ziyuan"></view>
+        <view class="txt">当前版本</view>
+      </view>
+      <view class="right">
+      <view class="txt">v4.1.1</view>
+      </view>
+    </view>
+  </view>
